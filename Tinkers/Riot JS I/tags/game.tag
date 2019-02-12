@@ -105,10 +105,10 @@
   <script>
     // JAVASCRIPT
 		let tag = this;
+		console.log(this);
 
 		const endWWII = new Date('September 02, 1945');
 		const today = new Date();
-
 		this.yearsSince = today.getYear() - endWWII.getYear();
 
 		this.menuState = "intro";	// intro, gameType, playerCount, playerCustomize
@@ -119,6 +119,14 @@
 		this.playerTypes = { liberal: 0, fascist: 0, hitler: 0 };
 		this.playersReady = false;
 		this.readyCount = 0;
+		console.log('yearSince: ' + this.yearsSince);
+		console.log(this.players);
+		console.log(this.playerCount);
+		console.log(this.playerTypes);
+		console.log(this.playersReady);
+		console.log(this.readyCount);
+		console.log(this);
+
 
 		/********************
 		TAG INSTANCE METHODS
