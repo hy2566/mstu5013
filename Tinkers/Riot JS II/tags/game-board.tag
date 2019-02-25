@@ -180,6 +180,7 @@
 
 		// START ROUND
 		advanceStage() {
+
 			let stage = this.stages[this.stageIndex];
 			let mechanics = this.mechanics[stage];
 			let mechanic;
@@ -218,6 +219,7 @@
 
 		// President DRAWS 3
 		draw(event) {
+
 			this.policyHandDeck = this.policyDrawDeck.splice(0, 3);
 		}
 
@@ -255,11 +257,12 @@
 
 		this.miscellaneousCount = 0;
 		incrementCount(event) {
-			event.preventUpdate = true;
+
 			this.miscellaneousCount++;
 			console.log(this.miscellaneousCount);
 		}
 		decrementCount(event) {
+      event.preventUpdate = true;
 			this.miscellaneousCount--;
 			console.log(this.miscellaneousCount);
 		}
