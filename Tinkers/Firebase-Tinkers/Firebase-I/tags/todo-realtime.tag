@@ -20,6 +20,8 @@
 		</button>
 	</form>
 
+		<button type="button" onclick={ addNew }>Add a new list</button>
+
 	<!-- this script tag is optional -->
 	<script>
 		this.title = opts.title || "DEFAULT TITLE";

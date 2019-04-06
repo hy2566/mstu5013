@@ -100,7 +100,6 @@
 			// .where('prop', '< <= == > >= array_contains', 'value')
 			// .limit(number)
 			// How would you get all words like camel, camera, camp?
-			database.collection('todos').get().then(snapshot => {
 				console.log('Collection successfully fetched.');
 
 				this.items = [];
